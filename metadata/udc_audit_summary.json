@@ -1,0 +1,18 @@
+{
+  "audit_version": "1.2",
+  "n_unique_labels": 807,
+  "n_flagged_for_manual_validation": 34,
+  "n_syntactically_unflagged_not_source_validated": 773,
+  "flag_counts": {
+    "unbalanced_parentheses": 4,
+    "unbalanced_square_brackets": 4,
+    "contains_letters_or_free_text": 3,
+    "trailing_punctuation": 9,
+    "year_or_year_range_like": 1,
+    "numeric_range_order_suspicious": 10,
+    "comma_in_notation": 6,
+    "characters_outside_conservative_udc_set": 6,
+    "repeated_dot": 1
+  },
+  "important_note": "Syntactically unflagged does NOT mean officially valid UDC. No semantic correction is performed automatically."
+}

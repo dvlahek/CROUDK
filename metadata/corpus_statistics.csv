@@ -1,0 +1,9 @@
+statistic,value
+unique_bibliographic_records,154210
+records_with_at_least_one_udc,153823
+records_without_udc,387
+multi_label_records,66611
+total_udc_assignments,232093
+distinct_raw_udc_strings_harvest_snapshot,808
+hrcak_urls,145346
+harvested_abstracts,0

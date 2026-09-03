@@ -1,0 +1,26 @@
+{
+  "candidate_pool": "union of Top-20 labels from TF-IDF+SGD, BERTic, and sparse historical retrieval",
+  "meta_training_year": 2020,
+  "meta_validation": "5-fold document-level OOF",
+  "model": "HistGradientBoostingClassifier",
+  "learning_rate": 0.06,
+  "max_iter": 160,
+  "max_leaf_nodes": 15,
+  "min_samples_leaf": 80,
+  "l2_regularization": 1.0,
+  "class_weight": "balanced",
+  "seed": 17,
+  "n_features": 27,
+  "features": [
+    "sgd_rr", "bertic_rr", "retrieval_rr",
+    "sgd_top1", "sgd_top3", "sgd_top5",
+    "bertic_top1", "bertic_top3", "bertic_top5",
+    "retrieval_top1", "retrieval_top3", "retrieval_top5",
+    "source_count", "sgd_x_bertic_rr", "sgd_x_retrieval_rr",
+    "bertic_x_retrieval_rr", "max_rr", "mean_rr", "std_rr",
+    "log_train_frequency", "notation_digit_depth",
+    "same_main_as_sgd_top1", "same_main_as_bertic_top1",
+    "same_main_as_retrieval_top1", "sgd_candidate_probability",
+    "sgd_top1_probability", "sgd_margin"
+  ]
+}

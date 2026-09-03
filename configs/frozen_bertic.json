@@ -1,0 +1,16 @@
+{
+  "model": "classla/bcms-bertic",
+  "task": "254-label title-only multilabel classification",
+  "loss": "unweighted BCEWithLogitsLoss",
+  "learning_rate": 2e-05,
+  "max_epochs": 3,
+  "best_epoch_observed": 1,
+  "train_batch_size": 16,
+  "gradient_accumulation": 2,
+  "effective_batch_size": 32,
+  "max_length": 96,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "seed": 17,
+  "status": "frozen baseline; bounded post-freeze sensitivity pending"
+}

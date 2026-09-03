@@ -1,0 +1,8 @@
+{
+  "method": "isotonic regression",
+  "training_scores": "five-fold OOF stacker scores from 2020",
+  "top1_calibrator": "probability Top-1 prediction is correct",
+  "hit5_calibrator": "probability at least one correct label is in Top-5",
+  "primary_abstention_score": "calibrated Top-1 confidence",
+  "development_evaluation_years": [2021, 2022]
+}

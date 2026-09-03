@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Local reconstructed data
+data/raw/
+data/prepared/
+*.jsonl.gz
+
+# Working outputs / caches / checkpoints
+work/
+_cache/
+cache/
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+
+# Manuscript working files
+paper/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

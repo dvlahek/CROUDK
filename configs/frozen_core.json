@@ -1,0 +1,10 @@
+{
+  "track": "title_only",
+  "core_definition": "UDC labels with >=10 occurrences in 2008-2019 training records",
+  "min_train_count": 10,
+  "n_core_labels": 254,
+  "train_years": "2008-2019",
+  "validation_year": 2020,
+  "development_years": [2021, 2022],
+  "reserved_holdout": "partial public HNB volumes 2023-2024"
+}

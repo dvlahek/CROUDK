@@ -1,0 +1,13 @@
+{
+  "representation": "word TF-IDF",
+  "ngram_range": [1, 2],
+  "min_df": 2,
+  "max_df": 0.98,
+  "sublinear_tf": true,
+  "max_features": 300000,
+  "classifier": "OneVsRest(SGDClassifier loss=log_loss)",
+  "alpha": 3e-06,
+  "average": true,
+  "class_weight": null,
+  "seed": 17
+}

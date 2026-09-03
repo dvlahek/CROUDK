@@ -1,0 +1,18 @@
+{
+  "repository_version": "0.1.0-dev",
+  "created": "2026-09-03",
+  "target_manuscript": "Information Processing & Management",
+  "record_level_data_included": false,
+  "full_udc_mrf_included": false,
+  "2023_2024_holdout_results_included": false,
+  "predictive_architecture": "frozen candidate-level stacker",
+  "pending": [
+    "candidate-source ablation",
+    "five-seed stacker stability",
+    "macro/frequency-stratified metrics",
+    "bounded BERTic sensitivity",
+    "qualitative examples",
+    "verified UDC Summary hierarchy",
+    "one-shot 2023-2024 partial-volume holdout"
+  ]
+}

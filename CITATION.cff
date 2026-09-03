@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use CroUDC, please cite the associated manuscript/repository release."
+title: "CroUDC: A Temporal Benchmark for Retrieval-Augmented Universal Decimal Classification from the Croatian National Bibliography"
+type: software
+version: 0.1.0-dev
+date-released: 2026-09-03
+authors:
+  - family-names: Vlahek
+    given-names: Dino
