@@ -4,7 +4,7 @@
 
 CroUDC studies title-based Universal Decimal Classification (UDC) recommendation from professionally catalogued records of the Croatian National Bibliography, Series B.
 
-This repository is currently a **development/reproducibility snapshot** for the Information Processing & Management manuscript. The predictive architecture is frozen, while bounded reviewer controls, the hierarchy-aware extension and the final 2023–2024 partial-volume holdout are still pending.
+This repository is currently a **minimal development/reproducibility snapshot** for the Information Processing & Management manuscript. The predictive architecture is frozen, while bounded reviewer controls, the hierarchy-aware extension and the final 2023–2024 partial-volume holdout are still pending.
 
 ## Current result
 
@@ -35,21 +35,23 @@ Calibrated selective prediction identifies a substantially stronger high-confide
 
 The 2021 and 2022 sets are explicitly **temporal development evaluations**, not untouched final test sets, because their results were inspected during architecture development.
 
-## Repository contents
+## Current repository contents
 
 ```text
-configs/      frozen configurations
-src/          harvesting, preparation, models and evaluation
-scripts/      reproduction wrappers
+configs/      frozen model/protocol configurations
+src/prepare/  title-benchmark preparation utility
+src/harvest/  harvest integrity utility
 metadata/     aggregate corpus and audit metadata
-results/      small aggregate result files
-docs/         dataset, licensing and reproducibility documentation
+results/      current aggregate result tables
+docs/         dataset, licensing and reproducibility notes
 data/         no redistributed record-level benchmark yet
 ```
 
+The cleaned training/evaluation pipeline will be added after the ongoing post-freeze controls are consolidated. The repository intentionally does not expose the internal sequence of experimental Stage 1/2/... development scripts.
+
 ## Data availability
 
-The record-level CroUDC dataset is **not redistributed here at present**. Reconstruction code is provided while the final data-sharing arrangement with the National and University Library in Zagreb is being resolved.
+The record-level CroUDC dataset is **not redistributed here at present**. The final data-sharing arrangement with the National and University Library in Zagreb is being resolved before any public release of record-level bibliographic data.
 
 The full proprietary UDC Master Reference File is not included.
 
@@ -65,11 +67,16 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-BERTić training requires PyTorch and Hugging Face Transformers and is most practical with a CUDA-capable GPU.
-
 ## Development status
 
-The current repository intentionally excludes the final 2023–2024 holdout results and the official UDC hierarchy layer until those analyses are frozen.
+The current repository intentionally excludes:
+
+- final reviewer-control results;
+- the official UDC hierarchy layer;
+- record-level public dataset files;
+- the final 2023–2024 holdout results.
+
+These will be added only after the corresponding procedures are frozen.
 
 ## Licence
 
